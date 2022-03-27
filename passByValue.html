@@ -1,0 +1,12 @@
+<script>
+
+    var input = 0; // this variable does not get updated when the function below is called
+
+    function increaseInput(input){
+        //the parameter input here is a copy of the variable input
+        return input+1
+    }
+
+    //this is how the variable input can be updated 
+    input = increaseInput(input);
+</script>

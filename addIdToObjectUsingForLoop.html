@@ -1,0 +1,26 @@
+<script>
+    var contacts = [
+        {name:'amy', email:'amy@mit.edu', course: 'web dev'}, 
+        {name:'fred', email:'fred@mit.edu', course: 'web dev'},
+        {name:'anne', email:'anne@mit.edu', course: 'web dev'}];
+
+        contacts
+/* (3) [{…}, {…}, {…}]
+0: {name: 'amy', email: 'amy@mit.edu', course: 'web dev'}
+1: {name: 'fred', email: 'fred@mit.edu', course: 'web dev'}
+2: {name: 'anne', email: 'anne@mit.edu', course: 'web dev'}
+length: 3
+[[Prototype]]: Array(0)
+*/
+for(let i = 0, i < 3, i++){
+    contacts[i].id = i;
+}
+//2
+contacts;
+(3) [{…}, {…}, {…}]
+0: {name: 'amy', email: 'amy@mit.edu', course: 'web dev', id: 0}
+1: {name: 'fred', email: 'fred@mit.edu', course: 'web dev', id: 1}
+2: {name: 'anne', email: 'anne@mit.edu', course: 'web dev', id: 2}
+length: 3
+[[Prototype]]: Array(0)
+</script>

@@ -1,0 +1,7 @@
+<script>
+    const f1 = function(a){return a + 1}
+    const x = 3; //3
+    const r = f1(x)
+/*
+we have a situation where the value of x gets copied into the argument a, so that a is now 3. And we return a + 1, Now there is no storage for a + 1, so temporary variable gets created with value a + 1. And that temporary variable now gets copied into r, and we exit the function, and everything inside now disappeares. Scope of a is just inside of the function. And now it is gone and r has the value 4. Notice that often variables come to existance and  going out of existance.
+</script>

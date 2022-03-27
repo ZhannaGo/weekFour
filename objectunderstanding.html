@@ -1,0 +1,28 @@
+<script>
+    //this is the first way of constructing objects:
+
+   const contacts = {name:'fred', email: 'fred@mit.edu'}
+   contacts.name //'fred'
+   contacts.email //'fred@mit.edu'
+   contacts['email'] // 'fred@mit.edu'
+    // this is the second way of constructing onject
+   const name = 'fred';
+   const email = 'fred@mit.edu';
+   const contact = {name, email};
+   contact // {name:'fred', email:'fred@mit.edu'}
+
+
+/* 
+So there are two different way of constructing onjects that lead to very similar state.
+*/
+
+//Now lets change one of the following elements:
+//the elements inside of the object do not need to be constant like const variable.We can change them like in array we do too.
+contact.name = 'anne';
+contact //{name:'anne', email:'fred@mit.edu'}
+contact.email = 'anne@mit.edu'; // 'anna@mit.edu'
+
+p = contact; // {name:'anne', email:'anne@mit.edu'}
+p.name = 'amy' // {name:'amy', email:'anne@mit.edu'}
+contact // {name:'amy', email:'anne@mit.edu'}
+</script>

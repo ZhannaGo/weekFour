@@ -1,0 +1,33 @@
+<script>
+    contacts = [
+        {name:'amy', email:'amy@mit.edu', course: 'web dev'}, 
+        {name:'fred', email:'fred@mit.edu', course: 'web dev'},
+        {name:'anne', email:'anne@mit.edu', course: 'web dev'}];
+
+       //Change the course that Amy is taking to front end dev
+       
+
+        contacts[0]['course'] = 'front dev';
+//'front dev'
+contacts
+//(3) [{…}, {…}, {…}]
+0: {name: 'amy', email: 'amy@mit.edu', course: 'front dev'}
+1: {name: 'fred', email: 'fred@mit.edu', course: 'web dev'}
+2: {name: 'anne', email: 'anne@mit.edu', course: 'web dev'}
+length: 3
+[[Prototype]]: Array(0)
+
+//Add a new contact object to the array with your information
+
+contacts.push({name:'zhanna', email:'zhanna@mit.edu', course: 'web dev'});
+contacts;
+//(4) [{…}, {…}, {…}, {…}]
+0: {name: 'amy', email: 'amy@mit.edu', course: 'front dev'}
+1: {name: 'fred', email: 'fred@mit.edu', course: 'web dev'}
+2: {name: 'anne', email: 'anne@mit.edu', course: 'web dev'}
+3: {name: 'zhanna', email: 'zhanna@mit.edu', course: 'web dev'}
+length: 4
+[[Prototype]]: Array(0)
+
+
+</script>

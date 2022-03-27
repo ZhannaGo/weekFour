@@ -1,0 +1,7 @@
+<script>
+    const f1 = function(a){a.x = 4};
+    const x = {x:3, y:4}; // this is an object
+    f1(x) //{x:4, y:4}
+/* 
+here is the x we are going to pass in. And it has an x slot and y slot, x is three and y is four. Now we fire f1 with (x) as an argument. Now we get situation when a as an argumrnt points to the same object as x. And a.x reaches that object, to the x slot and sets it equal to 4. Then we come out we do not have to return anything. So everything inside a disappeares inside the function. But the object that exists outside has the state x equal to four now.So it is updated.So when we pass objects into a function we can update them without having to return. 
+</script>
